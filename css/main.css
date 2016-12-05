@@ -1,7 +1,98 @@
-div{
+.outline{
 	outline: 1px solid green;
 }
 
+.cf::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+body{
+	min-width: 1122px;
+	min-height: 1750px;
+	margin: 0;
+	padding: 0;
+	background: #000 url(../img/index-bg.jpg) no-repeat 50%;\
+	background-size: 1122px auto;
+	color: #fff;
+}
+
+.main-header{
+	margin-bottom: 60px;
+}
+
+.container{
+	width: 940px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+.main-nav{
+	width: 780px;
+	float: left;
+}
+
+.user-block{
+	width: 140px;
+	float: right;
+}
+
+.main-logo{
+	width: 368px;
+	height: 204px;
+	margin: 0 auto;
+	margin-bottom: 25px;
+	display: block;
+}
+
+.features{
+	margin-bottom: 80px;
+}
+
+.features-item{
+	width: 300px;
+	margin-right: 20px;
+	float: left;
+}
+
+.features-item:last-child{
+	margin-right: 0;
+}
+
 .index-content{
-	min-height: 40px;
+	padding: 50px 80px;
+	margin-bottom: 35px;
+}
+
+.index-content-left{
+	float: left;
+	width: 380px;
+}
+
+.index-content-right{
+	float: right;
+	width: 300px;
+}
+
+.main-footer{
+	margin-top: 65px;
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+.footer-contacts{
+	width: 320px;
+	margin-right: 60px;
+	float: left;
+}
+
+.footer-social{
+	width: 180px;
+	float: left;
+}
+
+.copyright{
+	width: 140px;
+	float: right;
 }
