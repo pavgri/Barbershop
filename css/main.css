@@ -9,17 +9,22 @@
 }
 
 body{
-	min-width: 1122px;
-	min-height: 1750px;
+	min-width: 960px;
 	margin: 0;
 	padding: 0;
-	background: #000 url(../img/index-bg.jpg) no-repeat 50%;\
-	background-size: 1122px auto;
+	background: #242424 url(../img/index-bg.jpg) no-repeat center top;
 	color: #fff;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 .main-header{
 	margin-bottom: 60px;
+	color: #fff;
+	background-color: #000;
 }
 
 .container{
@@ -33,9 +38,67 @@ body{
 	float: left;
 }
 
+.main-nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+}
+
+.main-nav li{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.main-nav a{
+	display: block;
+	padding: 25px 20px;
+	color: #fff;
+	text-decoration: none;
+
+}
+
+.main-nav a:hover{
+	background: #242424;
+
+}
+
 .user-block{
-	width: 140px;
+	max-width: 140px;
 	float: right;
+}
+
+.user-block a{
+	position: relative;
+	display: inline-block;
+	padding: 25px 20px;
+	padding-left: 50px;
+	vertical-align: top;
+	font-size: 16px;
+	line-height: 20px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.user-block a:hover{
+	background: #242424;
+}
+
+.user-block a::before{
+	content: "";
+	position: absolute;
+	top: 28px;
+	left: 20px;
+	width: 18px;
+	height: 16px;
+	background: url(../img/icon-login.png);
+	opacity: 0.3;
+}
+
+.user-block a:hover::before{
+	opacity: 1;
 }
 
 .main-logo{
